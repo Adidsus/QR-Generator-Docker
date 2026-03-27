@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  qrsvc:
+    build: .
+    image: adidsus/qrsvc:latest
+    container_name: qrsvc
+    restart: unless-stopped
+    environment:
+      - PORT=3000
+      - BASIC_AUTH_USER=admin
+      # - BASIC_AUTH_PASS=secret (lepiej użyj .env, nie trzymaj haseł w repo)
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
