@@ -9,6 +9,8 @@ services:
       - PORT=2138
       - BASIC_AUTH_USER=aaa3Dev
       # - BASIC_AUTH_PASS=secret (lepiej użyj .env, nie trzymaj haseł w repo)
+    ports:
+      - "2138:2138"    # <-- DODAJ TO
     networks:
       - proxy
 
