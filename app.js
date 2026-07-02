@@ -124,5 +124,5 @@ app.get('/barcode', async (req, res) => {
 });
 
 app.listen(port, '0.0.0.0', () => {
-  console.log(\`QR/Barcode service listening on \${port}\`);
+  console.log('QR/Barcode service listening on ' + port);
 });
