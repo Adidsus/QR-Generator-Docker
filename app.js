@@ -44,7 +44,6 @@ app.get('/', (req, res) => {
   <div class="wrap">
     <div class="card">
       <h1>QR / Barcode Generator</h1>
-      <p>Wpisz tekst i wygeneruj kod. Działa lokalnie przez Twój kontener Docker.</p>
     </div>
 
     <div class="card">
